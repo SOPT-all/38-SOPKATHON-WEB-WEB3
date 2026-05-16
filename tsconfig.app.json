@@ -15,20 +15,19 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* 절대 경로 */
-    "baseUrl": ".",
+     /* Path Alias */
     "paths": {
-      "@apis/*": ["src/shared/apis/*"],
-      "@assets/*": ["src/shared/assets/*"],
-      "@components/*": ["src/shared/components/*"],
-      "@constants/*": ["src/shared/constants/*"],
-      "@hooks/*": ["src/shared/hooks/*"],
-      "@layout/*": ["src/layout/*"],
-      "@pages/*": ["src/pages/*"],
-      "@routes/*": ["src/routes/*"],
-      "@shared/*": ["src/shared/*"],
-      "@styles/*": ["src/shared/styles/*"],
-      "@utils/*": ["src/shared/utils/*"]
+      "@apis/*": ["./src/shared/apis/*"],
+      "@assets/*": ["./src/shared/assets/*"],
+      "@components/*": ["./src/shared/components/*"],
+      "@constants/*": ["./src/shared/constants/*"],
+      "@hooks/*": ["./src/shared/hooks/*"],
+      "@layout/*": ["./src/layout/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@styles/*": ["./src/shared/styles/*"],
+      "@utils/*": ["./src/shared/utils/*"]
     },
 
     /* Linting */
