@@ -28,7 +28,9 @@ const MyPageHeader = () => {
           />
         </svg>
       </button>
-      <h1 className="h-[2.4rem] w-[4.1rem] title-4-sb text-[#000000]">프로필</h1>
+      <h1 className="h-[2.4rem] w-[4.1rem] title-4-sb text-[#000000]">
+        프로필
+      </h1>
       <span aria-hidden="true" className="h-[2.4rem] w-[2.4rem]" />
     </header>
   );

@@ -50,7 +50,7 @@ const MyPage = () => {
         <ProfileSection nickname={nickname} profileImgUrl={profileImgUrl} />
         <section className="mt-[1.6rem] flex w-full flex-col gap-[1.2rem]">
           <p className="text-1-sb text-[#191919]">내가 작성한 글</p>
-          {posts.map((post) => (
+          {posts.map(post => (
             <PostCard
               key={post.postId}
               category={post.category}
