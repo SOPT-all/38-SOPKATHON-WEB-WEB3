@@ -1,0 +1,104 @@
+@theme {
+  --color-gray-900: #191919;
+  --color-gray-800: #2f2f2f;
+  --color-gray-700: #666666;
+  --color-gray-600: #8c8c8c;
+  --color-gray-500: #999999;
+  --color-gray-400: #b2b2b2;
+  --color-gray-300: #cccccc;
+  --color-gray-200: #e5e5e5;
+  --color-gray-100: #f6f6f6;
+  --color-gray-50: #fcfcfc;
+
+  --color-black: #0f0f0f;
+  --color-white: #ffffff;
+}
+
+:root {
+  --font-pretendard:
+    'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  --title-1-sb-font: var(--font-pretendard);
+  --title-1-sb-weight: 600;
+  --title-1-sb-size: 2.2rem;
+  --title-1-sb-line: 1.5;
+  --title-1-sb-track: -0.02em;
+
+  --title-1-m-font: var(--font-pretendard);
+  --title-1-m-weight: 500;
+  --title-1-m-size: 2.2rem;
+  --title-1-m-line: 1.5;
+  --title-1-m-track: -0.02em;
+
+  --title-2-sb-font: var(--font-pretendard);
+  --title-2-sb-weight: 600;
+  --title-2-sb-size: 2rem;
+  --title-2-sb-line: 1.5;
+  --title-2-sb-track: -0.02em;
+
+  --title-2-m-font: var(--font-pretendard);
+  --title-2-m-weight: 500;
+  --title-2-m-size: 2rem;
+  --title-2-m-line: 1.5;
+  --title-2-m-track: -0.02em;
+
+  --title-3-sb-font: var(--font-pretendard);
+  --title-3-sb-weight: 600;
+  --title-3-sb-size: 1.8rem;
+  --title-3-sb-line: 1.5;
+  --title-3-sb-track: -0.02em;
+
+  --title-3-m-font: var(--font-pretendard);
+  --title-3-m-weight: 500;
+  --title-3-m-size: 1.8rem;
+  --title-3-m-line: 1.5;
+  --title-3-m-track: -0.02em;
+
+  --title-4-sb-font: var(--font-pretendard);
+  --title-4-sb-weight: 600;
+  --title-4-sb-size: 1.6rem;
+  --title-4-sb-line: 1.5;
+  --title-4-sb-track: -0.02em;
+
+  --title-4-m-font: var(--font-pretendard);
+  --title-4-m-weight: 500;
+  --title-4-m-size: 1.6rem;
+  --title-4-m-line: 1.5;
+  --title-4-m-track: -0.02em;
+
+  --text-1-sb-font: var(--font-pretendard);
+  --text-1-sb-weight: 600;
+  --text-1-sb-size: 1.4rem;
+  --text-1-sb-line: 1.5;
+  --text-1-sb-track: -0.02em;
+
+  --text-1-m-font: var(--font-pretendard);
+  --text-1-m-weight: 500;
+  --text-1-m-size: 1.4rem;
+  --text-1-m-line: 1.5;
+  --text-1-m-track: -0.02em;
+
+  --text-2-sb-font: var(--font-pretendard);
+  --text-2-sb-weight: 600;
+  --text-2-sb-size: 1.2rem;
+  --text-2-sb-line: 1.5;
+  --text-2-sb-track: -0.02em;
+
+  --text-2-m-font: var(--font-pretendard);
+  --text-2-m-weight: 500;
+  --text-2-m-size: 1.2rem;
+  --text-2-m-line: 1.5;
+  --text-2-m-track: -0.02em;
+
+  --label-1-sb-font: var(--font-pretendard);
+  --label-1-sb-weight: 600;
+  --label-1-sb-size: 1rem;
+  --label-1-sb-line: 1.5;
+  --label-1-sb-track: -0.02em;
+
+  --label-1-m-font: var(--font-pretendard);
+  --label-1-m-weight: 500;
+  --label-1-m-size: 1rem;
+  --label-1-m-line: 1.5;
+  --label-1-m-track: -0.02em;
+}
