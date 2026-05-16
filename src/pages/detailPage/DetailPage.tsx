@@ -1,0 +1,11 @@
+import Header from '@components/Header.tsx';
+
+const DetailPage = () => {
+  return (
+    <>
+      <Header title="글 상세" />
+    </>
+  );
+};
+
+export default DetailPage;
