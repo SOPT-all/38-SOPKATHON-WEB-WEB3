@@ -25,7 +25,7 @@ const PostCard = ({
         </figure>
         <div className="flex flex-col">
           <span>{nickname}</span>
-          <time>{time}</time>
+          <span>{time}</span>
         </div>
       </header>
 
