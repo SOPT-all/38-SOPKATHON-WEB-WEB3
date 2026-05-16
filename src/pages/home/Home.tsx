@@ -24,7 +24,11 @@ const Home = () => {
   return (
     <div className="min-h-[61.3rem]">
       <div className="sticky top-0 z-10 bg-bg">
-        <HomeHeader username="익명#10" category={category} />
+        <HomeHeader
+          username="익명#10"
+          category={category}
+          onClick={() => navigate('/my-page')}
+        />
       </div>
       <div className="mt-[1.25rem] flex flex-col gap-[0.5rem] px-[2rem]">
         <CategoryTab category={category} onCategoryChange={setCategory} />

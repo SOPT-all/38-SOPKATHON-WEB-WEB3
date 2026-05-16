@@ -4,12 +4,14 @@ interface HomeHeaderProps {
   username: string;
   profileImage?: string;
   category: string;
+  onClick?: () => void;
 }
 
 const HomeHeader = ({
   username,
   profileImage = Profile,
   category,
+  onClick,
 }: HomeHeaderProps) => {
   return (
     <header className="flex flex-col gap-[0.8rem] px-[2rem] py-[0.8rem]">
@@ -50,12 +52,16 @@ const HomeHeader = ({
           오늘의 작은 {category}을 올려보세요
         </p>
 
-        <div className="flex items-center gap-[0.8rem]">
+        <button
+          type="button"
+          className="flex items-center gap-[0.8rem]"
+          onClick={onClick}
+        >
           <figure className="h-[2.8rem] w-[2.8rem] overflow-hidden rounded-[60rem] bg-gray-500">
             <img src={profileImage ?? Profile} alt={`${username}의 프로필`} />
           </figure>
           <span className="text-1-sb text-gray-700">{username}</span>
-        </div>
+        </button>
       </div>
     </header>
   );
