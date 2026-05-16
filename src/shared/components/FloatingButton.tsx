@@ -12,7 +12,10 @@ const FloatingButton = () => {
       type="button"
       aria-label="글쓰기"
       onClick={() => navigate(routePath.WRITE)}
-      className="fixed bottom-[2.4rem] right-[2rem] z-20 flex h-[5.6rem] w-[5.6rem] items-center justify-center rounded-full bg-primary shadow-[0_0.4rem_1.2rem_rgba(46,196,153,0.36)]"
+      style={{
+        right: 'calc((100vw - min(100vw, 430px)) / 2 + 2rem)',
+      }}
+      className="fixed bottom-[2.4rem] z-20 flex h-[5.6rem] w-[5.6rem] items-center justify-center rounded-full bg-primary shadow-[0_0.4rem_1.2rem_rgba(46,196,153,0.36)]"
     >
       <IcEdit className="h-[3.2rem] w-[3.2rem]" />
     </button>

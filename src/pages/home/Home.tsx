@@ -25,7 +25,7 @@ const Home = () => {
   );
 
   return (
-    <div className="relative">
+    <div className="relative min-h-full">
       <div className="sticky top-0 z-10 bg-bg">
         <HomeHeader
           username="익명의 감자튀김"
