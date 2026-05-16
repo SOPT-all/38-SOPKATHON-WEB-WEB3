@@ -1,24 +1,16 @@
 <div align="center">
-<h2> B-side </h2>
+  <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/61b87824-4c89-4679-92f7-3550edd131cb" />
+
 <p>인스타에는 못 올릴 사소한 자랑을 익명으로 공유하고, 모르는 사람들에게 진짜 사람의 공감과 박수를 받는 서비스</p>
 </div>
 <h2> ✨ B-side 주요 기능 </h2>
-<h3> 1️⃣ 글쓰기 </h3>
-<img width="375" height="665" alt="image" src="https://github.com/user-attachments/assets/17f7793f-8200-41f9-bd7d-916738c54df2" />
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/44524e46-26ff-4f52-98a6-e07587cdf83f" />
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/2e605838-a715-46ad-927a-ea315378cace" />
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/ddfec073-c8ec-416c-8e66-00677e0d2ea5" />
+<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/69c31e50-e2e6-463e-8321-2b86cdfe2c3a" />
+<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/ee1bb532-40b7-4711-a0d2-c8fa5cece5a7" />
+<img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/174de040-b352-433f-9ad8-b0c08a75ee35" />
 
-<div><strong>익명으로</strong> 인스타에는 못 올릴 사소한 자랑과 선행을 자유롭게 올려보세요!<br/></div>
-<h3> 2️⃣ 다른 사람 글 보기 </h3>
-<img width="379" height="673" alt="image" src="https://github.com/user-attachments/assets/e653a91f-8308-4081-b5c9-2e58b0226713" />
-
-<div><strong>선행 / 자랑</strong> 타입별로 피드를 탐색하고 다른 사람의 이야기를 만나보세요!<br/></div>
-<h3> 3️⃣ 글 상세 보기 / 댓글 / 좋아요 </h3>
-<img width="372" height="662" alt="image" src="https://github.com/user-attachments/assets/7b81e233-eb24-466d-8ca6-9021b5f38681" />
-
-<div><strong>진짜 사람의 공감과 박수</strong>를 댓글과 좋아요로 표현해보세요!<br/></div>
-<h3> 4️⃣ 내가 쓴 글 모아보기 </h3>
-<img width="374" height="667" alt="image" src="https://github.com/user-attachments/assets/379eef86-30da-4311-810a-6051b603ef98" />
-
-<div><strong>마이페이지</strong>에서 내가 올린 글들을 한눈에 확인하세요!<br/></div>
 <h2> 👥 Team </h2>
 <table align="center">
   <tr align="center">
