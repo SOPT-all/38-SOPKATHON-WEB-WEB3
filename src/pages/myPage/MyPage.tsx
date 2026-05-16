@@ -1,7 +1,9 @@
-import MyPageHeader from './components/MyPageHeader/MyPageHeader';
-import PostCard from './components/PostCard/PostCard';
-import ProfileSection from './components/ProfileSection/ProfileSection';
-import type { MyPageData } from './types/myPage';
+import { useNavigate } from 'react-router-dom';
+
+import MyPageHeader from '@pages/myPage/components/MyPageHeader/MyPageHeader';
+import PostCard from '@pages/myPage/components/PostCard/PostCard';
+import ProfileSection from '@pages/myPage/components/ProfileSection/ProfileSection';
+import type { MyPageData } from '@pages/myPage/types/myPage';
 
 const MOCK_DATA: MyPageData = {
   nickname: '익명#102948',
@@ -41,6 +43,7 @@ const MOCK_DATA: MyPageData = {
 };
 
 const MyPage = () => {
+  const navigate = useNavigate();
   const { nickname, profileImgUrl, posts } = MOCK_DATA;
 
   return (
@@ -49,7 +52,7 @@ const MyPage = () => {
       <div className="flex flex-col items-center px-[1.6rem]">
         <ProfileSection nickname={nickname} profileImgUrl={profileImgUrl} />
         <section className="mt-[1.6rem] flex w-full flex-col gap-[1.2rem]">
-          <p className="text-1-sb text-[#191919]">내가 작성한 글</p>
+          <p className="text-1-sb text-gray-900">내가 작성한 글</p>
           {posts.map(post => (
             <PostCard
               key={post.postId}
@@ -58,7 +61,7 @@ const MyPage = () => {
               supportCount={post.supportCount}
               commentCount={post.commentCount}
               clapCount={post.clapCount}
-              onClick={() => {}}
+              onClick={() => navigate(`/detail/${post.postId}`)}
             />
           ))}
         </section>

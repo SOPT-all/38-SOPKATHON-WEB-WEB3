@@ -15,7 +15,7 @@ const ProfileSection = ({ nickname, profileImgUrl }: ProfileSectionProps) => {
       ) : (
         <div className="h-[12rem] w-[12rem] rounded-full bg-gray-300" />
       )}
-      <p className="title-4-sb w-full text-center text-[#191919]">{nickname}</p>
+      <p className="title-4-sb w-full text-center text-gray-900">{nickname}</p>
     </section>
   );
 };
