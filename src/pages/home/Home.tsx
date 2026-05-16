@@ -9,6 +9,8 @@ import { CATEGORY_MAP } from '@pages/home/constants/category';
 import type { CategoryTab as CategoryTabType } from '@pages/home/constants/category';
 import { usePostsQuery } from '@pages/home/hooks/usePostsQuery';
 
+import FloatingButton from '@shared/components/FloatingButton';
+
 // TODO: 로그인 구현 후 실제 memberId로 교체
 const TEMP_MEMBER_ID = 1;
 
@@ -22,10 +24,10 @@ const Home = () => {
   );
 
   return (
-    <div className="min-h-[61.3rem]">
+    <div className="relative">
       <div className="sticky top-0 z-10 bg-bg">
         <HomeHeader
-          username="익명#10"
+          username="익명의 감자튀김"
           category={category}
           onClick={() => navigate('/my-page')}
         />
@@ -54,6 +56,7 @@ const Home = () => {
           />
         ))}
       </div>
+      <FloatingButton />
     </div>
   );
 };
