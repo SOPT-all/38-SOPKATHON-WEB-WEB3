@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { convertCreatedAt } from '@pages/detailPage/utils/convertCreatedAt';
 import CategoryTab from '@pages/home/components/CategoryTab';
 import HomeHeader from '@pages/home/components/HomeHeader';
 import HotCard from '@pages/home/components/HotCard';
@@ -47,7 +48,7 @@ const Home = () => {
             key={post.postId}
             profileImgUrl={post.member.profileImgUrl}
             name={post.member.name}
-            time={post.createdAt}
+            time={convertCreatedAt(post.createdAt)}
             content={post.content}
             likeCount={post.clapCount}
             commentCount={post.commentCount}
