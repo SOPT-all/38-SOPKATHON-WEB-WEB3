@@ -29,7 +29,6 @@
       "@routes/*": ["src/routes/*"],
       "@shared/*": ["src/shared/*"],
       "@styles/*": ["src/shared/styles/*"],
-      "@types/*": ["src/shared/types/*"],
       "@utils/*": ["src/shared/utils/*"]
     },
 
