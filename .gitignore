@@ -16,6 +16,8 @@ dist-ssr
 .env
 .env.*
 
+.env
+
 codex
 
 # Editor directories and files
