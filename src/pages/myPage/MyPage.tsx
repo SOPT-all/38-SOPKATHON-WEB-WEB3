@@ -27,7 +27,7 @@ const MyPage = () => {
   const { nickname, profileImgUrl, posts } = myPageData;
 
   return (
-    <div className="flex flex-col bg-gray-100 min-h-screen">
+    <div className="flex flex-col bg-gray-100 min-h-screen pb-[2.4rem]">
       <MyPageHeader />
       <div className="flex flex-col items-center px-[1.6rem]">
         <ProfileSection nickname={nickname} profileImgUrl={profileImgUrl} />

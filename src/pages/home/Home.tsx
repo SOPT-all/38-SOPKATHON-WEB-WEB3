@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { convertCreatedAt } from '@pages/detailPage/utils/convertCreatedAt';
 import CategoryTab from '@pages/home/components/CategoryTab';
 import HomeHeader from '@pages/home/components/HomeHeader';
 import HotCard from '@pages/home/components/HotCard';
@@ -24,7 +25,7 @@ const Home = () => {
   );
 
   return (
-    <div className="relative">
+    <div className="relative min-h-full">
       <div className="sticky top-0 z-10 bg-bg">
         <HomeHeader
           username="익명의 감자튀김"
@@ -32,10 +33,10 @@ const Home = () => {
           onClick={() => navigate('/my-page')}
         />
       </div>
-      <div className="mt-[1.25rem] flex flex-col gap-[0.5rem] px-[2rem]">
+      <div className="mt-[1.25rem] flex flex-col gap-[0.8rem] px-[2rem]">
         <CategoryTab category={category} onCategoryChange={setCategory} />
         <HotCard
-          content="9시 서들 출발 했나요??"
+          content="아름다운 가게 봉사다녀왔어요 ㅎㅎ"
           likeCount={100}
           empathyCount={50}
         />
@@ -47,7 +48,7 @@ const Home = () => {
             key={post.postId}
             profileImgUrl={post.member.profileImgUrl}
             name={post.member.name}
-            time={post.createdAt}
+            time={convertCreatedAt(post.createdAt)}
             content={post.content}
             likeCount={post.clapCount}
             commentCount={post.commentCount}
