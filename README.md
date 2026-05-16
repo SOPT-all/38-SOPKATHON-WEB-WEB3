@@ -1,19 +1,24 @@
 <div align="center">
-<h2> (서비스이름) </h2>
-<img src=""  alt="서비스대표-이미지" />
-<p>(서비스 소개)</p>
+<h2> B-side </h2>
+<p>인스타에는 못 올릴 사소한 자랑을 익명으로 공유하고, 모르는 사람들에게 진짜 사람의 공감과 박수를 받는 서비스</p>
 </div>
+<h2> ✨ B-side 주요 기능 </h2>
+<h3> 1️⃣ 글쓰기 </h3>
+<img width="375" height="665" alt="image" src="https://github.com/user-attachments/assets/17f7793f-8200-41f9-bd7d-916738c54df2" />
 
-<h2> ✨ (서비스) 주요 기능 </h2>
+<div><strong>익명으로</strong> 인스타에는 못 올릴 사소한 자랑과 선행을 자유롭게 올려보세요!<br/></div>
+<h3> 2️⃣ 다른 사람 글 보기 </h3>
+<img width="379" height="673" alt="image" src="https://github.com/user-attachments/assets/e653a91f-8308-4081-b5c9-2e58b0226713" />
 
-<h3> 1️⃣ (기능 1) </h3>
-<img src=""  alt="기능1-대표이미지" />
-<div><strong>(강조단어)</strong> (기능설명)<br/></div>
+<div><strong>선행 / 자랑</strong> 타입별로 피드를 탐색하고 다른 사람의 이야기를 만나보세요!<br/></div>
+<h3> 3️⃣ 글 상세 보기 / 댓글 / 좋아요 </h3>
+<img width="372" height="662" alt="image" src="https://github.com/user-attachments/assets/7b81e233-eb24-466d-8ca6-9021b5f38681" />
 
-<h3> 2️⃣ (기능 2) </h3>
-<img src=""  alt="기능2-대표이미지" />
-<div><strong>(강조단어)</strong> (기능설명)<br/></div>
+<div><strong>진짜 사람의 공감과 박수</strong>를 댓글과 좋아요로 표현해보세요!<br/></div>
+<h3> 4️⃣ 내가 쓴 글 모아보기 </h3>
+<img width="374" height="667" alt="image" src="https://github.com/user-attachments/assets/379eef86-30da-4311-810a-6051b603ef98" />
 
+<div><strong>마이페이지</strong>에서 내가 올린 글들을 한눈에 확인하세요!<br/></div>
 <h2> 👥 Team </h2>
 <table align="center">
   <tr align="center">
@@ -53,12 +58,13 @@
     <td>황유림</td>
   </tr>
   <tr align="center">
-    <td>(역할분담)</td>
-    <td>(역할분담)</td>
-    <td>(역할분담)</td>
-    <td>(역할분담)</td>
+    <td>상세 페이지<br/>ESLint + Prettier 설정</td>
+    <td>마이페이지<br/>Tailwind CSS 설치 및 세팅<br/>PR / ISSUE 템플릿 생성</td>
+    <td>등록 페이지<br/>레포 생성 및 폴더 구조 생성<br/>Github 라벨링 / 브랜치 설정<br/>배포 / SVGR / CI·CD 세팅</td>
+    <td>홈페이지<br/>Router + 절대 경로 설정<br/>Axios + TanStack Query 설정<br/>오토 리뷰어 설정</td>
   </tr>
 </table>
+
 
 <h2> 🛠 기술스택 </h2>
 
