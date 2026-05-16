@@ -1,3 +1,5 @@
+import { useParams } from 'react-router-dom';
+
 import Header from '@components/Header.tsx';
 
 import CommentInput from './components/CommentInput';
@@ -6,9 +8,16 @@ import DetailContentSection from './components/DetailContentSection';
 import { usePostDetailQuery } from './hooks/usePostDetailQuery';
 
 const DetailPage = () => {
-  const { data: postDetail, isLoading, isError } = usePostDetailQuery(4);
+  const { postId } = useParams();
+  const parsedPostId = Number(postId);
+  const isValidPostId = Number.isInteger(parsedPostId) && parsedPostId > 0;
+  const {
+    data: postDetail,
+    isLoading,
+    isError,
+  } = usePostDetailQuery(parsedPostId, isValidPostId);
 
-  if (isLoading) {
+  if (isValidPostId && isLoading) {
     return (
       <>
         <Header isWhiteBackground title="글 상세" />

@@ -4,7 +4,7 @@ interface HotCardProps {
   content: string;
   likeCount: number;
   empathyCount: number;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const HotCard = ({
@@ -17,6 +17,7 @@ const HotCard = ({
     <button
       className="flex w-full items-center justify-between rounded-[1rem] border border-primary bg-primary-light px-[1.0625rem] py-[0.875rem]"
       type="button"
+      disabled={!onClick}
       onClick={onClick}
     >
       <div className="flex min-w-0 items-center gap-[0.5rem]">

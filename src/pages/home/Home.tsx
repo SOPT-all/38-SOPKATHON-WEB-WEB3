@@ -32,7 +32,6 @@ const Home = () => {
           content="9시 서들 출발 했나요??"
           likeCount={100}
           empathyCount={50}
-          onClick={() => navigate('/detail/1')}
         />
         {isLoading && (
           <p className="text-center text-gray-400">불러오는 중...</p>
@@ -47,6 +46,7 @@ const Home = () => {
             likeCount={post.clapCount}
             commentCount={post.commentCount}
             empathyCount={post.supportCount}
+            onClick={() => navigate(`/detail/${post.postId}`)}
           />
         ))}
       </div>

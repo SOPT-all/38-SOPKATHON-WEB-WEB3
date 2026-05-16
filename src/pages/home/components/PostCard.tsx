@@ -1,3 +1,5 @@
+import type { KeyboardEvent } from 'react';
+
 import { IcHandWave, IcHeartFill, IcMessage } from '@shared/assets/svg';
 
 interface PostCardProps {
@@ -8,6 +10,7 @@ interface PostCardProps {
   likeCount: number;
   commentCount: number;
   empathyCount: number;
+  onClick: () => void;
 }
 
 const PostCard = ({
@@ -18,9 +21,23 @@ const PostCard = ({
   likeCount,
   commentCount,
   empathyCount,
+  onClick,
 }: PostCardProps) => {
+  const handleKeyDown = (event: KeyboardEvent<HTMLElement>) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      onClick();
+    }
+  };
+
   return (
-    <article className="flex flex-col items-start rounded-[1rem] bg-white p-[1rem] shadow-[0_1px_5.6px_0_rgba(0,0,0,0.08)]">
+    <article
+      role="button"
+      tabIndex={0}
+      onClick={onClick}
+      onKeyDown={handleKeyDown}
+      className="flex cursor-pointer flex-col items-start rounded-[1rem] bg-white p-[1rem] shadow-[0_1px_5.6px_0_rgba(0,0,0,0.08)]"
+    >
       <header className="flex items-center gap-[0.5rem]">
         <figure className="h-[1.875rem] w-[1.875rem] shrink-0 overflow-hidden rounded-full">
           <img src={profileImgUrl} alt={`${name}의 프로필`} />
@@ -36,13 +53,18 @@ const PostCard = ({
       </p>
 
       <footer className="mt-[1rem] flex w-full items-center">
-        <button type="button" className="flex items-center gap-[0.25rem]">
+        <button
+          type="button"
+          className="flex items-center gap-[0.25rem]"
+          onClick={event => event.stopPropagation()}
+        >
           <IcHeartFill className="h-[2rem] w-[2rem]" />
           <span className="text-2-m text-gray-900">{likeCount}</span>
         </button>
         <button
           type="button"
           className="ml-[1.25rem] flex items-center gap-[0.25rem]"
+          onClick={event => event.stopPropagation()}
         >
           <IcMessage className="h-[2rem] w-[2rem]" />
           <span className="text-2-m text-gray-900">{commentCount}</span>
@@ -50,6 +72,7 @@ const PostCard = ({
         <button
           type="button"
           className="ml-auto flex items-center gap-[0.25rem]"
+          onClick={event => event.stopPropagation()}
         >
           <IcHandWave className="h-[2rem] w-[2rem]" />
           <span className="text-2-m text-gray-900">{empathyCount}</span>
