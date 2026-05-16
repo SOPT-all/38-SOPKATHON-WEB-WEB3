@@ -1,20 +1,14 @@
 export type PostCategory = 'KINDNESS' | 'BOAST';
 
-export interface PostMember {
-  memberId: number;
-  name: string;
-  profileImgUrl: string;
-}
-
 export interface MyPagePost {
   postId: number;
-  member: PostMember;
-  createdAt: string;
   category: PostCategory;
   content: string;
   clapCount: number;
   supportCount: number;
   commentCount: number;
+  isClapped: boolean;
+  isSupported: boolean;
 }
 
 export interface MyPageData {

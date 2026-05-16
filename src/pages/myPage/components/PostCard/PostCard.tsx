@@ -39,20 +39,16 @@ const PostCard = ({
         <div className="flex items-center gap-[1.2rem]">
           <span className="flex items-center gap-[0.4rem]">
             <IcHeartFill className="h-[2rem] w-[2rem] shrink-0" />
-            <span className="text-2-m w-[2rem] text-gray-900">
-              {supportCount}
-            </span>
+            <span className="text-2-m text-gray-900">{supportCount}</span>
           </span>
           <span className="flex items-center gap-[0.4rem]">
             <IcMessage className="h-[2rem] w-[2rem] shrink-0" />
-            <span className="text-2-m w-[2rem] text-gray-900">
-              {commentCount}
-            </span>
+            <span className="text-2-m text-gray-900">{commentCount}</span>
           </span>
         </div>
         <span className="flex items-center gap-[0.4rem]">
           <IcHandWave className="h-[2rem] w-[2rem] shrink-0" />
-          <span className="text-2-m w-[2rem] text-gray-900">{clapCount}</span>
+          <span className="text-2-m text-gray-900">{clapCount}</span>
         </span>
       </div>
     </article>
