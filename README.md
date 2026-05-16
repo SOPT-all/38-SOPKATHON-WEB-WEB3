@@ -65,9 +65,7 @@
   </tr>
 </table>
 
-
 <h2> 🛠 기술스택 </h2>
-
 
 | 역할                        | 스택                                                                                                                                                                                                               |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -79,8 +77,7 @@
 | **Formatting**              | ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E) |
 | **Package Manager**         | ![Pnpm](https://img.shields.io/badge/Pnpm-F69220?style=for-the-badge&logo=pnpm&logoColor=white)                                                                                                                    |
 | **Version Control**         | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)   |
-| **Deployment**  | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)                                                                                                             
-
+| **Deployment**              | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)                                                                                                              |
 
 <br/>
 
@@ -88,31 +85,31 @@
 
 <h3> 커밋 컨벤션 </h3>
 
-| 커밋 컨벤션 | 용도 |
-| ----------- | ---- |
-| `init` | 초기 세팅 |
-| `feat` | 새로운 기능 추가 |
-| `fix` | 버그 수정 |
-| `refactor` | 코드 리팩토링 |
-| `style` | 스타일 코드 변경 |
-| `chore` | 패키지 매니저 수정, 기타 수정 (.gitignore 등) |
-| `docs` | 문서 수정 |
-| `asset` | SVG, 이미지 등 디자인 파일 추가 |
-| `type` | 타입 수정 |
-| `rename` | 파일 또는 폴더명 수정/이동 |
-| `remove` | 파일 삭제 |
-| `HOTFIX` | 치명적인 버그 긴급 수정 |
+| 커밋 컨벤션 | 용도                                          |
+| ----------- | --------------------------------------------- |
+| `init`      | 초기 세팅                                     |
+| `feat`      | 새로운 기능 추가                              |
+| `fix`       | 버그 수정                                     |
+| `refactor`  | 코드 리팩토링                                 |
+| `style`     | 스타일 코드 변경                              |
+| `chore`     | 패키지 매니저 수정, 기타 수정 (.gitignore 등) |
+| `docs`      | 문서 수정                                     |
+| `asset`     | SVG, 이미지 등 디자인 파일 추가               |
+| `type`      | 타입 수정                                     |
+| `rename`    | 파일 또는 폴더명 수정/이동                    |
+| `remove`    | 파일 삭제                                     |
+| `HOTFIX`    | 치명적인 버그 긴급 수정                       |
 
 <h3> 브랜치 </h3>
 
-| 브랜치 | 용도 |
-| ------ | ---- |
-| `main` | 배포용 브랜치 — 모든 리뷰가 끝난 후 merge |
-| `dev` | 개발용 브랜치 — 기능 브랜치들을 merge |
-| `init/#issue-number/기능명` | 초기 세팅 |
-| `feat/#issue-number/기능명` | 새로운 기능 개발 |
-| `fix/#issue-number/기능명` | 버그 수정 |
-| `refactor/#issue-number/기능명` | 리팩토링 |
+| 브랜치                          | 용도                                      |
+| ------------------------------- | ----------------------------------------- |
+| `main`                          | 배포용 브랜치 — 모든 리뷰가 끝난 후 merge |
+| `dev`                           | 개발용 브랜치 — 기능 브랜치들을 merge     |
+| `init/#issue-number/기능명`     | 초기 세팅                                 |
+| `feat/#issue-number/기능명`     | 새로운 기능 개발                          |
+| `fix/#issue-number/기능명`      | 버그 수정                                 |
+| `refactor/#issue-number/기능명` | 리팩토링                                  |
 
 <br/>
 
@@ -155,7 +152,6 @@
 <h2>🏡 웹왔니팟 Before and After</h2>
 <h3>Before</h3>
 <img src="https://github.com/user-attachments/assets/17af3941-8cba-4fff-8d16-709ba504ad79" alt="image" />
-
 
 <h3>After</h3>
 <img src="" alt="웨비 팀원들 사진 (after)"/>
