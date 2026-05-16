@@ -10,7 +10,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "svgr": "npx @svgr/cli -d src/shared/assets/svg --ignore-existing --typescript --no-dimensions --jsx-runtime automatic public/svg"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.100.10",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@svgr/cli": "^8.1.0",
     "@tailwindcss/vite": "^4.3.0",
     "@tanstack/react-query-devtools": "^5.100.10",
     "@types/node": "^24.12.3",
@@ -41,6 +43,7 @@
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
     "vite": "^8.0.12",
+    "vite-plugin-svgr": "^5.2.0",
     "vite-tsconfig-paths": "^6.1.1"
   }
 }
