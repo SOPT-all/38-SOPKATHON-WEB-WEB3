@@ -1,9 +1,11 @@
-import Header from "@components/Header.tsx";
+import Header from '@components/Header.tsx';
 
-function MyPage() {
-  return <>
-    <Header title={"프로필"}/>
-  </>;
-}
+const MyPage = () => {
+  return (
+    <>
+      <Header title="프로필" />
+    </>
+  );
+};
 
 export default MyPage;
