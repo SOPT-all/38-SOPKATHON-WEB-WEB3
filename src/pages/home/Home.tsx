@@ -35,7 +35,7 @@ const Home = () => {
       <div className="mt-[1.25rem] flex flex-col gap-[0.5rem] px-[2rem]">
         <CategoryTab category={category} onCategoryChange={setCategory} />
         <HotCard
-          content="9시 서들 출발 했나요??"
+          content="아름다운 가게 봉사다녀왔어요 ㅎㅎ"
           likeCount={100}
           empathyCount={50}
         />
