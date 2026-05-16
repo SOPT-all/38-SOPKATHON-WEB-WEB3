@@ -15,7 +15,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-     /* Path Alias */
+    /* Path Alias */
     "paths": {
       "@apis/*": ["./src/shared/apis/*"],
       "@assets/*": ["./src/shared/assets/*"],
