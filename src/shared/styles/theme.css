@@ -12,6 +12,17 @@
 
   --color-black: #0f0f0f;
   --color-white: #ffffff;
+
+  /* Primary */
+  --color-primary: #2ec499;
+  --color-primary-light: #e3fef0;
+
+  /* Point */
+  --color-point-red: #ff6868;
+  --color-point-blue: #607dff;
+
+  /* UI */
+  --color-bg: #f9f9f9;
 }
 
 :root {
