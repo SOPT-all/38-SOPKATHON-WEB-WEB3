@@ -24,10 +24,10 @@ const Home = () => {
   );
 
   return (
-    <div className="min-h-[61.3rem]">
+    <div className="relative">
       <div className="sticky top-0 z-10 bg-bg">
         <HomeHeader
-          username="익명#10"
+          username="익명의 감자튀김"
           category={category}
           onClick={() => navigate('/my-page')}
         />
