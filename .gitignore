@@ -30,3 +30,4 @@ codex
 *.njsproj
 *.sln
 *.sw?
+.env
