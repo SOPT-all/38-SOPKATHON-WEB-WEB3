@@ -32,7 +32,7 @@ const Home = () => {
           onClick={() => navigate('/my-page')}
         />
       </div>
-      <div className="mt-[1.25rem] flex flex-col gap-[0.5rem] px-[2rem]">
+      <div className="mt-[1.25rem] flex flex-col gap-[0.8rem] px-[2rem]">
         <CategoryTab category={category} onCategoryChange={setCategory} />
         <HotCard
           content="아름다운 가게 봉사다녀왔어요 ㅎㅎ"

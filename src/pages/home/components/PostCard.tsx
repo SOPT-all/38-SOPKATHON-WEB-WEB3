@@ -36,10 +36,10 @@ const PostCard = ({
       tabIndex={0}
       onClick={onClick}
       onKeyDown={handleKeyDown}
-      className="flex cursor-pointer flex-col items-start rounded-[1rem] bg-white p-[1rem] shadow-[0_1px_5.6px_0_rgba(0,0,0,0.08)]"
+      className="flex cursor-pointer flex-col items-start rounded-[1.6rem] bg-white p-[1.6rem] shadow-[0_1px_5.6px_0_rgba(0,0,0,0.08)]"
     >
       <header className="flex items-center gap-[0.5rem]">
-        <figure className="h-[1.875rem] w-[1.875rem] shrink-0 overflow-hidden rounded-full">
+        <figure className="h-[3rem] w-[3rem] shrink-0 overflow-hidden rounded-full">
           <img src={profileImgUrl} alt={`${name}의 프로필`} />
         </figure>
         <div className="flex flex-col">
