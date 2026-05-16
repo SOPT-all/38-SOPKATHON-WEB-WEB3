@@ -1,14 +1,22 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+
+import type { PostCategory } from '@shared/apis/writePosts';
+import { useCreatePost } from '@shared/hooks/useCreatePost';
 
 import Header from '@components/Header.tsx';
 
 type Category = 'gooddeed' | 'brag';
 
+const CATEGORY_MAP: Record<Category, PostCategory> = {
+  gooddeed: 'KINDNESS',
+  brag: 'BOAST',
+};
+
 const WritePage = () => {
-  const navigate = useNavigate();
   const [category, setCategory] = useState<Category>('gooddeed');
   const [text, setText] = useState('');
+
+  const { mutate: createPost, isPending } = useCreatePost();
 
   const MAX_LENGTH = 100;
   const placeholder =
@@ -16,9 +24,8 @@ const WritePage = () => {
   const isActive = text.length > 0;
 
   const handleSubmit = () => {
-    if (!isActive) return;
-    // TODO: API 연동
-    navigate('/');
+    if (!isActive || isPending) return;
+    createPost({ content: text, category: CATEGORY_MAP[category] });
   };
 
   return (
@@ -26,7 +33,6 @@ const WritePage = () => {
       <Header title="글 작성하기" />
 
       <div className="flex flex-col flex-1 px-[2rem] pt-6 pb-5 gap-4">
-        {/* 카테고리 탭 */}
         <div className="flex gap-2">
           {(['gooddeed', 'brag'] as Category[]).map(cat => (
             <button
@@ -44,7 +50,6 @@ const WritePage = () => {
           ))}
         </div>
 
-        {/* 텍스트 영역 */}
         <div
           className="relative bg-white rounded-2xl p-[2.4rem]"
           style={{ height: '265px' }}
@@ -62,17 +67,16 @@ const WritePage = () => {
         </div>
       </div>
 
-      {/* 등록 버튼 - 하단 고정 */}
       <div className="px-5 pb-8 pt-4">
         <button
           onClick={handleSubmit}
-          disabled={!isActive}
+          disabled={!isActive || isPending}
           style={{ height: '56px' }}
           className={`w-full rounded-2xl text-white title-3-sb transition-colors ${
-            isActive ? 'bg-primary' : 'bg-gray-300'
+            isActive && !isPending ? 'bg-primary' : 'bg-gray-300'
           }`}
         >
-          등록
+          {isPending ? '등록 중...' : '등록'}
         </button>
       </div>
     </div>
