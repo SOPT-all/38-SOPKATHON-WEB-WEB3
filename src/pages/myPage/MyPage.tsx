@@ -1,5 +1,11 @@
-function MyPage() {
-  return <>내 정보 페이지</>;
-}
+import Header from '@components/Header.tsx';
+
+const MyPage = () => {
+  return (
+    <>
+      <Header title="프로필" />
+    </>
+  );
+};
 
 export default MyPage;
