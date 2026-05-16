@@ -5,46 +5,21 @@ import CategoryTab from '@pages/home/components/CategoryTab';
 import HomeHeader from '@pages/home/components/HomeHeader';
 import HotCard from '@pages/home/components/HotCard';
 import PostCard from '@pages/home/components/PostCard';
+import { CATEGORY_MAP } from '@pages/home/constants/category';
+import type { CategoryTab as CategoryTabType } from '@pages/home/constants/category';
+import { usePostsQuery } from '@pages/home/hooks/usePostsQuery';
 
-type Category = '선행' | '자랑';
+// TODO: 로그인 구현 후 실제 memberId로 교체
+const TEMP_MEMBER_ID = 1;
 
-const MOCK_POSTS = [
-  {
-    id: 1,
-    profileImgUrl: '',
-    name: '닉네임',
-    time: '시간',
-    content: '저 오늘 잘했어요',
-    likeCount: 100,
-    commentCount: 1,
-    empathyCount: 50,
-  },
-  {
-    id: 2,
-    profileImgUrl: '',
-    name: '닉네임',
-    time: '시간',
-    content:
-      '저 오늘 잘했어요 저 오늘 잘했어요 저 오늘 잘했어요 저 오늘 잘했어요 저 오늘 잘했어요',
-    likeCount: 100,
-    commentCount: 1,
-    empathyCount: 50,
-  },
-  {
-    id: 3,
-    profileImgUrl: '',
-    name: '닉네임',
-    time: '시간',
-    content: '저 오늘 잘했어요',
-    likeCount: 100,
-    commentCount: 1,
-    empathyCount: 50,
-  },
-];
-
-function Home() {
+const Home = () => {
   const navigate = useNavigate();
-  const [category, setCategory] = useState<Category>('선행');
+  const [category, setCategory] = useState<CategoryTabType>('선행');
+
+  const { data, isLoading } = usePostsQuery(
+    TEMP_MEMBER_ID,
+    CATEGORY_MAP[category],
+  );
 
   return (
     <div className="min-h-[61.3rem]">
@@ -59,21 +34,24 @@ function Home() {
           empathyCount={50}
           onClick={() => navigate('/detail/1')}
         />
-        {MOCK_POSTS.map(post => (
+        {isLoading && (
+          <p className="text-center text-gray-400">불러오는 중...</p>
+        )}
+        {data?.posts.map(post => (
           <PostCard
-            key={post.id}
-            profileImgUrl={post.profileImgUrl}
-            name={post.name}
-            time={post.time}
+            key={post.postId}
+            profileImgUrl={post.member.profileImgUrl}
+            name={post.member.name}
+            time={post.createdAt}
             content={post.content}
-            likeCount={post.likeCount}
+            likeCount={post.clapCount}
             commentCount={post.commentCount}
-            empathyCount={post.empathyCount}
+            empathyCount={post.supportCount}
           />
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default Home;
