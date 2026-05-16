@@ -4,7 +4,7 @@ const MyPageHeader = () => {
   const navigate = useNavigate();
 
   return (
-    <header className="sticky top-0 z-10 flex w-full items-center justify-between gap-[0.8rem] px-[2rem] py-[1.3rem] text-gray-900">
+    <header className="sticky top-0 z-10 flex w-full items-center justify-between gap-[0.8rem] bg-gray-100 px-[2rem] py-[1.3rem] text-gray-900">
       <button
         aria-label="뒤로 가기"
         type="button"
