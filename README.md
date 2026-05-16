@@ -146,4 +146,4 @@
 <img src="https://github.com/user-attachments/assets/17af3941-8cba-4fff-8d16-709ba504ad79" alt="image" />
 
 <h3>After</h3>
-<img src="" alt="웨비 팀원들 사진 (after)"/>
+<img width="810" height="541" alt="image" src="https://github.com/user-attachments/assets/d06d63ac-4bb9-45af-a743-ab9e45ba4854" />
