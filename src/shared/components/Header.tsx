@@ -22,7 +22,7 @@ const Header = ({ title, isWhiteBackground = false }: HeaderProps) => {
         onClick={() => navigate(-1)}
         type="button"
       >
-        <IcArrowLeft aria-hidden="true"/>
+        <IcArrowLeft aria-hidden="true" />
       </button>
 
       <h1 className="title-4-sb text-center">{title}</h1>
