@@ -1,5 +1,9 @@
+import Header from "@components/Header.tsx";
+
 function MyPage() {
-  return <>내 정보 페이지</>;
+  return <>
+    <Header title={"프로필"}/>
+  </>;
 }
 
 export default MyPage;

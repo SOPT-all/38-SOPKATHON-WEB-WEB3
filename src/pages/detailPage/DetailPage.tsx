@@ -1,5 +1,9 @@
+import Header from "@components/Header.tsx";
+
 function DetailPage() {
-  return <>글 상세 페이지</>;
+  return <>
+    <Header title={"글 상세"}/>
+  </>;
 }
 
 export default DetailPage;
